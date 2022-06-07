@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CRUD Firebase</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/pulse/bootstrap.min.css"
+            integrity="sha384-L7+YG8QLqGvxQGffJ6utDKFwmGwtLcCjtwvonVZR/Ba2VzhpMwBz51GaXnUsuYbj" crossorigin="anonymous">
+            <link rel="stylesheet" href="/index.css">
+        </head>
+
+    <body class="bg-dark">
+        <div id="introducir" class="card text-white bg-info mb-6  offset-md-0" style="max-width: 150rem;">
+            <div class="card-header text-white">Formulario Tareas</div>
+            <div class="card-body">
+                <form id="task-form">
+                    <input type="text" id="task-title" class="form-control" placeholder="Título de la tarea que vas a realizar"
+                        autofocus>
+                    <textarea id="task-description" class="form-control" placeholder="Describe la tarea que vas a realizar en un futuro" cols="10"
+                        rows="5"></textarea>
+                    <br>
+
+                    <input type="submit" value="Guardar Tarea" class="btn btn-light btn-lg btn-outline-success" id="task-button">
+
+                </form>
+
+            </div>
+        </div>
+        <div id="updatear" style="display:none" class="card text-white bg-primary mb-6  offset-md-0" style="max-width: 150rem;">
+            <div class="card-header">Formulario Tareas</div>
+            <div class="card-body">
+                <form id="update-form">
+                    <input type="text" id="update-title" class="form-control" placeholder="Actualización del título de la tarea"
+                        autofocus>
+                    <textarea type="textarea" id="update-description" class="form-control" placeholder="Actualización de la descripción de la tarea" cols="10"
+                        rows="5"></textarea>
+                    <br>
+
+                    <input type="submit" value="Actualizar Tarea" class="btn btn-lg btn-outline-secondary btn-light" id="btn">
+                </form>
+            </div>
+        </div>
+        <h3 class="bg-light text-black text-center" style="max-width: 350rem;" >Listado de tareas existente</h3>
+        <br>
+        <script src="utils.js" type="module" defer></script>
+        <script src="index.js" type="module" defer></script>
+    </body>
+
+</html>
